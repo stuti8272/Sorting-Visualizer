@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Sorting Visualizer</title>
+		<link
+			rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>Sorting Algorithms Visualizer</h1>
+		<form>
+			<div class="rangeSelector">
+				<input
+					id="size"
+					placeholder="Enter the Number of Elements"
+					type="range"
+					min="1"
+					max="20"
+					step="1"
+					value="1" />
+				<label for="size">Select Number of Elements</label>
+			</div>
+			<div style="display: flex; gap: 0.8rem">
+				<div class="sortingSelector">
+					<input
+						type="radio"
+						name="sorting"
+						id="bubble"
+						value="bubble" />
+					<label for="bubble">Bubble Sort</label>
+				</div>
+				<div class="sortingSelector">
+					<input
+						type="radio"
+						name="sorting"
+						id="selection"
+						value="selection" />
+					<label for="selection">Selection Sort</label>
+				</div>
+				<div class="sortingSelector">
+					<input
+						type="radio"
+						name="sorting"
+						id="insertion"
+						value="insertion" />
+					<label for="insertion">Insertion Sort</label>
+				</div>
+				<div class="sortingSelector">
+					<input
+						type="radio"
+						name="sorting"
+						id="quick"
+						value="quick" />
+					<label for="quick">Quick Sort</label>
+				</div>
+				<div class="sortingSelector">
+					<input
+						type="radio"
+						name="sorting"
+						id="merge"
+						value="merge" />
+					<label for="merge">Merge Sort</label>
+				</div>
+				<div class="sortingSelector">
+					<input
+						type="radio"
+						name="sorting"
+						id="heap"
+						value="heap" />
+					<label for="heap">Heap Sort</label>
+				</div>
+			</div>
+			<input
+				type="submit"
+				style="padding: 0.2rem 1rem; margin: 0 0.5rem"
+				value="SORT" />
+		</form>
+		<div class="chart-container">
+			<div class="base"></div>
+			<!-- Left Side Meter-->
+			<ul class="meter">
+				<li><div>Level-4</div></li>
+				<li><div>Level-3</div></li>
+				<li><div>Level-2</div></li>
+				<li><div>Level 1</div></li>
+				<li><div></div></li>
+			</ul>
+			<!-- Background-Grid -->
+			<table>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+			</table>
+			<!-- End Background Grid -->
+			<div id="barsContainer"></div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
